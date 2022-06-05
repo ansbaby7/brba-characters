@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Grid from '../components/content/Grid'
 
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div>
       <Head>
@@ -12,9 +12,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Grid/>
+        <Grid characters = {props.data}/>
       </div>
 
     </div>
   )
+}
+
+
+export async function getStaticProps(){
+  const res = await fetch("https://www.breakingbadapi.com/api/characters?category=Breaking+Bad");
+  const data = await res.json();
+
+  return{
+    props:{
+      data:data
+    }
+  }
 }
