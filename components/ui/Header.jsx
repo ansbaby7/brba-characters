@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="bg-lime-100  flex flex-col justify-between items-center sm:flex-row">
+    <div className="bg-stone-200  flex flex-col justify-between items-center sm:flex-row">
         {/* bg-[#29773E] */}
       <div className="flex items-center gap-x-4">
         <img
@@ -9,7 +9,7 @@ const Header = () => {
         />
         <span className="ml-4 text-slate-800 text-xl md:text-5xl uppercase font-bold">Characters</span>
       </div>
-      <a className=" text-md md:text-xl font-bold cursor-pointer" >CODE</a>
+      <a className=" text-md md:text-xl mr-4 font-bold cursor-pointer" >CODE</a>
     </div>
   );
 };
