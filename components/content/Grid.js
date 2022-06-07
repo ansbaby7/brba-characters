@@ -7,8 +7,8 @@ import Card from "./Card";
 
 const Grid = ({ characters }) => {
   return (
-    <div className='bg-[#29773E]'>
-      <div className="grid lg:grid-cols-4">
+    <div className='bg-[#29773E] w-full'>
+      <div className="py-4 px-2 justify-items-center  grid sm:grid-cols-2 lg:grid-cols-3 w-full xl:grid-cols-4">
         {characters.map((character) => (
           <Card character={character} key={character.char_id} />
         ))}
