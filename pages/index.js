@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Grid from '../components/content/Grid'
-import Header from '../components/ui/Header';
 
 
 export default function Home(props) {
@@ -13,7 +12,6 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className=''>
-        <Header/>
         <Grid characters = {props.data}/>
       </div>
 
