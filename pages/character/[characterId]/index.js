@@ -4,7 +4,7 @@ const CharacterDetail = (props) => {
   //console.log(props.data[0].name);
   const character = props.data[0];
   return (
-    <div className="bg-stone-700 py-16 px-16">
+    <div className="bg-stone-700 py-4 md:py-16 px-16">
       <CharacterInfo character={character}/>
     </div>
   );
