@@ -4,14 +4,14 @@ const CharacterDetail = (props) => {
   //console.log(props.data[0].name);
   const character = props.data[0];
   return (
-    <div className="bg-stone-700 py-4 md:py-16 px-16">
+    <div className="bg-stone-700 p-8">
       <CharacterInfo character={character}/>
     </div>
   );
 };
 
 export async function getStaticPaths() {
-  const res = await fetch("https://breakingbadapi.com/api/characters");
+  const res = await fetch("https://www.breakingbadapi.com/api/characters?category=Breaking+Bad");
   const characters = await res.json();
   const paths = characters.map((character) => {
     return {
