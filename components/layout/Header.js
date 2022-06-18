@@ -1,3 +1,6 @@
+import Link from "next/link";
+import {ImGithub} from "react-icons/im"
+
 const Header = () => {
   return (
     <div className="bg-stone-200  flex flex-col justify-between items-center sm:flex-row">
@@ -9,7 +12,11 @@ const Header = () => {
         />
         <span className="ml-4 text-slate-800 text-xl md:text-5xl uppercase font-bold">Characters</span>
       </div>
-      <a className=" text-md md:text-xl mr-4 font-bold cursor-pointer" >CODE</a>
+      <Link href="https://github.com/ansbaby7/brba-characters">
+      <a className="">
+        <span className=""><ImGithub className="h-6 w-16 mt-4 mb-4 sm:mb-0"/></span>
+      </a>
+      </Link>
     </div>
   );
 };

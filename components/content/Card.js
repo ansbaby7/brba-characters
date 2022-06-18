@@ -4,7 +4,7 @@ const Card = ({ character }) => {
   return (
     <Link href={`/character/${character.char_id}`}>
       <a>
-        <div className="bg-slate-600  border-2 rounded-xl w-72 m-4 hover:scale-105 transition duration-500">
+        <div className="bg-slate-600  border-2 rounded-xl w-64 mx-1 my-4 sm:w-72 sm:m-4 hover:scale-105 transition duration-500">
           <img
             src={character.img}
             className=" rounded-t-xl object-cover  object-top h-72 w-72"
